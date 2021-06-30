@@ -2,6 +2,7 @@ import "./styles.css";
 import Header from "./Components/Header";
 import DogSectionPage from "./Pages/DogSectionPage";
 import DogCardPage from "./Pages/DogCardPage";
+import FormDog from "./Pages/FormDog";
 import { useEffect, useState } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/dogscards/:id" exact>
             <DogCardPage />
+          </Route>
+          <Route path="/formdog" exact>
+            <FormDog />
           </Route>
         </Switch>
       </main>
