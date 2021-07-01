@@ -1,15 +1,27 @@
-function FormDog() {
+function FormDog({ addDog }) {
+  function handleSubmit(event) {
+    event.preventDefault();
+    const dogdata = {
+      name: event.target.name.value,
+      bio: event.target.bio.value,
+      image: event.target.image.value,
+      isGoodDog: true,
+    };
+    addDog(dogdata);
+    event.target.reset();
+  }
+
   return (
     <section className="main__dog-section">
       <h2>Add a new Dog</h2>
-      <form className="form">
-        <label for="name">Dog's name</label>
+      <form className="form" onSubmit={handleSubmit}>
+        <label htmlFor="name">Dog's name</label>
         <input type="text" id="name" name="name" />
 
-        <label for="image">Dog's picture</label>
+        <label htmlFor="image">Dog's picture</label>
         <input type="url" id="image" name="image" />
 
-        <label for="bio">Dog's bio</label>
+        <label htmlFor="bio">Dog's bio</label>
         <textarea rows="5" id="bio" name="bio"></textarea>
 
         <input

@@ -73,6 +73,10 @@ img {
 }
 
 /* Components */
+.dogs-list__button a {
+  color: white;
+  text-decoration: none;
+}
 
 .dogs-list__button {
   display: grid;

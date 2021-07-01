@@ -15,6 +15,18 @@ function App() {
       .then(setDogs);
   }, []);
 
+  function addDog(dogdata) {
+    fetch("http://localhost:4000/dogs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(dogdata),
+    })
+      .then((response) => response.json())
+      .then((dog) => {
+        setDogs([...dogs, dog]);
+      });
+  }
+
   return (
     <>
       <Header dogs={dogs} />
@@ -27,7 +39,7 @@ function App() {
             <DogCardPage />
           </Route>
           <Route path="/formdog" exact>
-            <FormDog />
+            <FormDog addDog={addDog} />
           </Route>
         </Switch>
       </main>

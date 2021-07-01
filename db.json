@@ -48,6 +48,27 @@
       "bio": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, minima voluptates libero cumque rerum consequatur optio aliquid sinteum maxime illo laborum omnis quo ab rem cupiditate nulla perspiciatis ipsum!",
       "isGoodDog": true,
       "image": "https://curriculum-content.s3.amazonaws.com/js/woof-woof/dog_7.jpg"
+    },
+    {
+      "name": "Hard As Nails",
+      "bio": "I am a Mean MOFO 😈",
+      "image": "https://www.rover.com/blog/wp-content/uploads/2018/11/dachshund-2975210_1920.jpg",
+      "isGoodDog": true,
+      "id": 8
+    },
+    {
+      "name": "Dave",
+      "bio": "yep i'm pretty cool",
+      "image": "https://i.ytimg.com/vi/gsYF8mMnufY/maxresdefault.jpg",
+      "isGoodDog": true,
+      "id": 9
+    },
+    {
+      "name": "Dave 2",
+      "bio": "asdfasdf",
+      "image": "https://www.rover.com/blog/wp-content/uploads/2018/11/dachshund-2975210_1920.jpg",
+      "isGoodDog": true,
+      "id": 10
     }
   ]
 }
