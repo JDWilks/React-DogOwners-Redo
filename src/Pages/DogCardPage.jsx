@@ -2,7 +2,7 @@ import DogCard from "../Components/DogCard";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-function DogCardPage({ dogs }) {
+function DogCardPage({ dogs, deleteDog }) {
   const [dog, setDog] = useState([]);
 
   const { id } = useParams();
@@ -17,7 +17,7 @@ function DogCardPage({ dogs }) {
 
   return (
     <section className="main__dog-section">
-      <DogCard dog={dog} />
+      <DogCard dog={dog} deleteDog={deleteDog} />
     </section>
   );
 }

@@ -55,20 +55,6 @@
       "image": "https://www.rover.com/blog/wp-content/uploads/2018/11/dachshund-2975210_1920.jpg",
       "isGoodDog": true,
       "id": 8
-    },
-    {
-      "name": "Dave",
-      "bio": "yep i'm pretty cool",
-      "image": "https://i.ytimg.com/vi/gsYF8mMnufY/maxresdefault.jpg",
-      "isGoodDog": true,
-      "id": 9
-    },
-    {
-      "name": "Dave 2",
-      "bio": "asdfasdf",
-      "image": "https://www.rover.com/blog/wp-content/uploads/2018/11/dachshund-2975210_1920.jpg",
-      "isGoodDog": true,
-      "id": 10
     }
   ]
 }

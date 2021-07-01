@@ -73,10 +73,6 @@ img {
 }
 
 /* Components */
-.dogs-list__button a {
-  color: white;
-  text-decoration: none;
-}
 
 .dogs-list__button {
   display: grid;
@@ -94,6 +90,8 @@ img {
   cursor: pointer;
 
   transition: all 300ms;
+  color: white;
+  text-decoration: none;
 }
 
 .dogs-list__button:hover {

@@ -1,4 +1,4 @@
-function DogCard({ dog }) {
+function DogCard({ dog, deleteDog }) {
   return (
     <section class="main__dog-section">
       <h2>{dog.name}</h2>
@@ -12,6 +12,14 @@ function DogCard({ dog }) {
           <em>Is naughty?</em> {dog.isGoodDog ? "Yes" : "No"}
         </p>
         <button>{dog.isGoodDog ? "No" : "Yes"}</button>
+        <button
+          className="deleteDog"
+          onClick={() => {
+            deleteDog(dog);
+          }}
+        >
+          Delete Me
+        </button>
       </div>
     </section>
   );
